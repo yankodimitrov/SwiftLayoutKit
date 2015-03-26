@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwiftLayoutKit"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "An elegant and simple way to build your auto layout constraints"
 
   s.description  = <<-DESC
