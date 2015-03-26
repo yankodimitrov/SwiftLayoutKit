@@ -11,6 +11,11 @@ Keep in mind that **SwiftLayoutKit** will not set the <code>setTranslatesAutores
 
 ## Installation
 
+#### CocoaPods
+Add the pod <code>SwiftLayoutKit</code> to your <code>Podfile</code>:
+
+<code>pod “SwiftLayoutKit”</code>
+
 #### Manually
 
 Copy the contents of the <code>SwiftLayoutKit</code> folder to your project:
