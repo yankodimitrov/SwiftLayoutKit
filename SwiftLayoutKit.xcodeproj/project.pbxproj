@@ -321,6 +321,8 @@
 		C9ABADAD1AC420F3000E6735 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Yanko Dimitrov";
 				TargetAttributes = {
@@ -701,6 +703,7 @@
 				C9ABADCE1AC420F3000E6735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9ABADCF1AC420F3000E6735 /* Build configuration list for PBXNativeTarget "SwiftLayoutKitTests" */ = {
 			isa = XCConfigurationList;
@@ -709,6 +712,7 @@
 				C9ABADD11AC420F3000E6735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9ABAE091AC42343000E6735 /* Build configuration list for PBXNativeTarget "SwiftLayoutKitExample" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +721,7 @@
 				C9ABAE0B1AC42343000E6735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9ABAE0C1AC42343000E6735 /* Build configuration list for PBXNativeTarget "SwiftLayoutKitExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +730,7 @@
 				C9ABAE0E1AC42343000E6735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

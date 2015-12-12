@@ -18,10 +18,10 @@ class LayoutTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        containerView.removeConstraints(containerView.constraints())
+        containerView.removeConstraints(containerView.constraints)
         
-        firstView.setTranslatesAutoresizingMaskIntoConstraints(false)
-        secondView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        firstView.translatesAutoresizingMaskIntoConstraints = false
+        secondView.translatesAutoresizingMaskIntoConstraints = false
         
         containerView.addSubview(firstView)
         containerView.addSubview(secondView)
@@ -38,7 +38,7 @@ class LayoutTests: XCTestCase {
         containerView.addConstraints(centerY)
         containerView.layoutIfNeeded()
         
-        XCTAssertGreaterThan(containerView.constraints().count, 0, "We should be able to produce and add constraints")
+        XCTAssertGreaterThan(containerView.constraints.count, 0, "We should be able to produce and add constraints")
         XCTAssert(firstView.frame.origin == centerPoint, "Should be equal to the center point of the alignment view")
         XCTAssert(secondView.frame.origin == centerPoint, "Should be equal to the center point of the alignment view")
     }

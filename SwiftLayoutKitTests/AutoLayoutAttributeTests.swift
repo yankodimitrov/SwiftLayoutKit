@@ -16,7 +16,7 @@ class AutoLayoutAttributeTests: XCTestCase {
     lazy var view: UIView = {
         
         let view = UIView()
-        view.setTranslatesAutoresizingMaskIntoConstraints(false)
+        view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
         }()
@@ -69,7 +69,7 @@ class AutoLayoutAttributeTests: XCTestCase {
     func testThatWeCanMakeConstraintWithRelationToLayoutAttribute() {
         
         let secondView = UIView()
-        secondView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        secondView.translatesAutoresizingMaskIntoConstraints = false
         
         let secondAttribute = AutoLayoutAttribute(type: .Bottom, view: secondView, multiplier: multiplier, constant: constant, priority: priority)
         

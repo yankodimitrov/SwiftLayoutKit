@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         
         let label = UILabel()
             label.text = "LayoutKit"
-            label.setTranslatesAutoresizingMaskIntoConstraints(false)
+            label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
     }()
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         
         let view = UIView()
             view.backgroundColor = UIColor.blueColor()
-            view.setTranslatesAutoresizingMaskIntoConstraints(false)
+            view.translatesAutoresizingMaskIntoConstraints = false
         
         return view
     }()
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     
     private func setupLayout() {
         
-        let views = ["title": titleLabel]
+        let views : [String : UIView] = ["title": titleLabel]
         
         view +| constraintsWith(format: "|-[title]-|", forViews: views)
         

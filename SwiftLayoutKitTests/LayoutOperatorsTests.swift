@@ -18,7 +18,7 @@ class LayoutOperatorsTests: XCTestCase {
         
         containerView +| constraint
         
-        XCTAssertGreaterThan(containerView.constraints().count, 0, "We should be able to add constraint")
+        XCTAssertGreaterThan(containerView.constraints.count, 0, "We should be able to add constraint")
     }
     
     func testAddConstraintOperatorWithMultipleConstraints() {
@@ -29,7 +29,7 @@ class LayoutOperatorsTests: XCTestCase {
         
         containerView +| [constraintOne, constraintTwo]
         
-        XCTAssertGreaterThan(containerView.constraints().count, 0, "We should be able to add constraints")
+        XCTAssertGreaterThan(containerView.constraints.count, 0, "We should be able to add constraints")
     }
     
     func testPriorityOperator() {
