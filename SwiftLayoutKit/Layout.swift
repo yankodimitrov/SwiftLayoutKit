@@ -34,10 +34,9 @@ public func constraintsWith(align attribute: NSLayoutAttribute, toView: UIView, 
     
     var constraints = [NSLayoutConstraint]()
     
-    views.map({
-        
-        constraints.append( $0.attribute(attribute) == toView.attribute(attribute) )
-    })
+    views.forEach { (view) -> () in
+        constraints.append( view.attribute(attribute) == toView.attribute(attribute) )
+    }
     
     return constraints
 }
