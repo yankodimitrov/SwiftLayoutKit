@@ -16,5 +16,5 @@ public protocol LayoutAttribute {
     var constant: CGFloat {get}
     var priority: Float {get}
     
-    func makeConstraintWith(#relation: NSLayoutRelation, toAttribute: LayoutAttribute?) -> NSLayoutConstraint
+    func makeConstraintWith(relation relation: NSLayoutRelation, toAttribute: LayoutAttribute?) -> NSLayoutConstraint
 }
